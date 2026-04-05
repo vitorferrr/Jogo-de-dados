@@ -1,9 +1,10 @@
-import Image from "next/image";
+import JogoDados from '../components/JogoDados';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      
+    <div style={{ backgroundColor: '#000', minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <title>Jogo de Dados - 5 Rodadas</title>
+      <JogoDados />
     </div>
   );
 }
