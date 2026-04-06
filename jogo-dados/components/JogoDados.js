@@ -45,7 +45,7 @@ export default function JogoDados() {
       setMsgRodada('Empate na rodada!');
     }
 
-
+    
     //verificador das rodadas
     if (rodada < 5) {
       setTimeout(() => {
@@ -59,7 +59,6 @@ export default function JogoDados() {
     }
   };
   
-
   const reiniciar = () => {
     setRodada(1);
     setVitoriasJogador1(0);
@@ -72,9 +71,12 @@ export default function JogoDados() {
   };
 
   const getVencedorGeral = () => {
-    if (vitoriasJogador1 > vitoriasJogador2) return "Jogador 1 venceu a partida!";
-    if (vitoriasJogador2 > vitoriasJogador1) return "Jogador 2 venceu a partida!";
-    return "Empate!";
+    if (vitoriasJogador1 > vitoriasJogador2) 
+      return "Jogador 1 venceu a partida!";
+    if (vitoriasJogador2 > vitoriasJogador1) 
+      return "Jogador 2 venceu a partida!";
+    else 
+      return "Empate!";
   };
 
   return (
